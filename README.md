@@ -98,11 +98,13 @@ AC_PROG_CXX
 AC_LANG(C++)
 ```
 
-And then update all the `Makefile.am` with the references to the C++ source files.
+And then update all the `Makefile.am` files with the references to the C++ source files.
 
 To configure the project, use this command:
 
 ```
 ./configure CC=clang CXX=clang++
 ```
+
+See this branch: https://github.com/mpuening/learn-autotools/tree/cpp
 
