@@ -2,6 +2,7 @@
 /config.h
 /src/hello
 *.o
+*.a
 
 # http://www.gnu.org/software/automake
 

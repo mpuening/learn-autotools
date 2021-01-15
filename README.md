@@ -18,6 +18,14 @@ Create the following files as shown in this project:
 * src/hello.c
 * src/main.c
 
+If a library is wanted, these files can be added:
+
+* lib/libutil/Makefile.am
+* lib/libutil/util.h
+* lib/libutil/util.c
+
+Note: The top level `Makefile.am` file references the sub-directories to process.
+
 ## Autotools Installation
 
 To build the Makefiles for this project, you need the Autotools installed.
