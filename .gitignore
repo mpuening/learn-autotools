@@ -2,6 +2,7 @@
 /config.h
 /src/hello
 *.o
+*.a
 
 # http://www.gnu.org/software/automake
 
@@ -13,6 +14,8 @@ Makefile.in
 /ylwrap
 .deps/
 .dirstamp
+tap-driver.sh
+*.trs
 
 # http://www.gnu.org/software/autoconf
 

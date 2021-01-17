@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo 1..2 # Test plan; 2 tests
+
+HELLO=./hello
+
+function test_build {
+	if [ -f "$HELLO" ]; then
+		echo "ok build - $HELLO executable found. # OK"
+	else 
+		echo "not ok build - $HELLO executable not found # FAIL"
+		return
+	fi
+}
+
+function test_output {
+	$HELLO > hello.out
+	diff hello.expected hello.out
+
+	if [ $? -eq 0 ]; then
+		echo "ok output - correct hello output # OK"
+	else
+		echo "not ok output - incorrect hello output # FAIL"		
+	fi
+	rm hello.out
+}
+
+test_build
+test_output
+
+exit 0
+
+
+
+# How to report on test cases
+
+# https://www.gnu.org/software/automake/manual/html_node/Use-TAP-with-the-Automake-test-harness.html
+
+#echo 1..3 # Test plan; 3 tests
+#echo "ok 1 - Output equals # OK"
+#echo "not ok 2 - Test failed # FAIL"
+#echo "ok 3 - Test skipped # SKIP"
