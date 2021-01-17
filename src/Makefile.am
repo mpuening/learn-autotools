@@ -1,7 +1,7 @@
 bin_PROGRAMS = hello
 hello_SOURCES = main.cpp hello.cpp
 
-hello_CFLAGS = -I../include -I../lib/libutil
+hello_CXXFLAGS = -I../include -I../lib/libutil
 hello_LDADD = ../lib/libutil/libutil.a $(EXTRALIBS)
 
 TESTS_ENVIRONMENT =
