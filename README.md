@@ -59,6 +59,12 @@ To build the app, use these commands:
 make
 ```
 
+To run the test cases:
+
+```
+make check
+```
+
 To clean the project:
 
 ```

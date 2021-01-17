@@ -16,6 +16,7 @@ rm -rf aclocal.m4
 rm -rf stamp-h1
 rm -rf libtool
 rm -rf ar-lib
+rm -rf tap-driver.sh
 
 rm -rf Makefile
 rm -rf Makefile.in

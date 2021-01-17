@@ -13,4 +13,8 @@ AC_CONFIG_FILES([
  include/Makefile
  src/Makefile
 ])
+
+AC_PROG_AWK
+AC_REQUIRE_AUX_FILE([tap-driver.sh])
+
 AC_OUTPUT
