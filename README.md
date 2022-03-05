@@ -1,6 +1,8 @@
 Learn Autotools
 ===============
 
+[![Continuous Integration](https://github.com/mpuening/learn-autotools/actions/workflows/ci.yml/badge.svg)](https://github.com/mpuening/learn-autotools/actions/workflows/ci.yml)
+
 This is a sample project that is configured using autotools.
 
 This project follows these instructions: https://www.gnu.org/software/automake/manual/html_node/Hello-World.html
